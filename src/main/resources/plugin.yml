@@ -1,0 +1,5 @@
+name: Synapse
+version: 1.0.0
+description: A FOSS advanced reporting system
+author: bobby29831
+main: com.bobby29831.SynapsePlugin
