@@ -12,12 +12,13 @@ resolvers += "papermc" at "https://repo.papermc.io/repository/maven-public/"
 libraryDependencies += "io.papermc.paper" % "paper-api" % "1.19-R0.1-SNAPSHOT"
 libraryDependencies += "com.github.cb372" % "scalacache-core_3" % "1.0.0-M6"
 libraryDependencies += "com.github.cb372" % "scalacache-caffeine_3" % "1.0.0-M6"
+libraryDependencies += "com.moandjiezana.toml" % "toml4j" % "0.7.2"
 
 javacOptions ++= Seq("-source", "17", "-target", "17")
 
 ThisBuild / assemblyMergeStrategy := (x => MergeStrategy.discard)
 ThisBuild / assemblyShadeRules := Seq(
-  ShadeRule.rename("com.github.benmanes.caffeine" -> "com.bobby29831.libraries.caffeine").inAll
+
 )
 
 
